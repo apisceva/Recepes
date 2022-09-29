@@ -6,10 +6,10 @@ import Favorites from "./components/Favorites";
 export default function App() {
   return (
     <main>
-      {/* <Search />
-      <Favorites /> */}
+      <Search />
+      <Favorites />
       <Meals />
-      {/* <Modal /> */}
+      <Modal />
     </main>
   );
 }
