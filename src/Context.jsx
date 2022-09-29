@@ -10,6 +10,7 @@ const AppProvider = ({ children }) => {
   const [meals, setMeals] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   const fetchMeals = async (url) => {
     setLoading(true);
@@ -42,7 +43,7 @@ const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ loading, meals, setSearchTerm, fetchRandomMeal }}
+      value={{ loading, meals, setSearchTerm, fetchRandomMeal, showModal }}
     >
       {" "}
       {children}
